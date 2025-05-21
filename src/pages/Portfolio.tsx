@@ -95,9 +95,9 @@ const Portfolio = () => {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Portfolio</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">My Portfolio</h1>
             <p className="text-lg text-gray-300">
-              Explore our diverse collection of projects showcasing UI design, logo creation, and branding work
+              Explore my diverse collection of projects showcasing UI design, logo creation, and branding work
               for clients across Cameroon and beyond.
             </p>
           </div>

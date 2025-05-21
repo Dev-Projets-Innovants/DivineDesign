@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
@@ -35,7 +36,7 @@ const featuredProjects = [
 const services = [
   {
     title: 'UI/UX Design',
-    description: 'Create intuitive, beautiful interfaces that engage users and boost conversion rates.',
+    description: 'I create intuitive, beautiful interfaces that engage users and boost conversion rates.',
     icon: <Layers size={24} className="text-cameroon-green" />,
     features: ['Custom wireframes', 'Responsive design', 'User testing', 'Interactive prototypes'],
     price: '250,000 FCFA',
@@ -70,7 +71,7 @@ const Index = () => {
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">Bringing Your <span className="text-cameroon-green">Vision</span> to Life</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We create stunning digital experiences that blend modern design with Cameroonian cultural influences, 
+            I create stunning digital experiences that blend modern design with Cameroonian cultural influences, 
             helping businesses stand out in an increasingly digital world.
           </p>
         </div>
@@ -107,7 +108,7 @@ const Index = () => {
             className="border-cameroon-green text-cameroon-green hover:bg-cameroon-green/10"
             asChild
           >
-            <Link to="/about">Learn More About Us</Link>
+            <Link to="/about">Learn More About Me</Link>
           </Button>
         </div>
       </section>
@@ -118,7 +119,7 @@ const Index = () => {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Recent <span className="text-cameroon-green">Projects</span></h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore our latest work across UI design, logo creation, and branding projects.
+              Explore my latest work across UI design, logo creation, and branding projects.
             </p>
           </div>
           
@@ -150,9 +151,9 @@ const Index = () => {
       {/* Services Section */}
       <section className="section-container">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold mb-4">Our <span className="text-cameroon-green">Services</span></h2>
+          <h2 className="text-3xl font-bold mb-4">My <span className="text-cameroon-green">Services</span></h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We offer comprehensive design solutions tailored to meet your business needs and goals.
+            I offer comprehensive design solutions tailored to meet your business needs and goals.
           </p>
         </div>
         
