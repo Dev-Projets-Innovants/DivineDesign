@@ -1,10 +1,9 @@
-
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import ProjectCard from '@/components/ProjectCard';
 import ServiceCard from '@/components/ServiceCard';
-import { Gallery, Layers, Brush } from 'lucide-react';
+import { GalleryHorizontal, Layers, Brush } from 'lucide-react';
 
 const featuredProjects = [
   {
@@ -53,7 +52,7 @@ const services = [
   {
     title: 'Custom Projects',
     description: 'Custom design services tailored to your specific needs and requirements.',
-    icon: <Gallery size={24} className="text-cameroon-green" />,
+    icon: <GalleryHorizontal size={24} className="text-cameroon-green" />,
     features: ['Personalized consultation', 'Custom solutions', 'Comprehensive support', 'Ongoing maintenance'],
     price: 'Custom',
     popular: false,
@@ -95,7 +94,7 @@ const Index = () => {
           
           <div className="text-center p-6 rounded-lg bg-gray-50 border-t-4 border-cameroon-red">
             <div className="bg-cameroon-red/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Gallery size={28} className="text-cameroon-red" />
+              <GalleryHorizontal size={28} className="text-cameroon-red" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Brand Identity</h3>
             <p className="text-gray-600">Cohesive visual systems that communicate your brand's unique story</p>

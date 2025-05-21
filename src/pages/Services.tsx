@@ -1,8 +1,7 @@
-
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import ServiceCard from '@/components/ServiceCard';
-import { Brush, Layers, Gallery, ArrowRight } from 'lucide-react';
+import { Brush, Layers, GalleryHorizontal, ArrowRight } from 'lucide-react';
 
 const services = [
   {
@@ -38,7 +37,7 @@ const services = [
   {
     title: 'Branding',
     description: 'Comprehensive brand identity development to establish a cohesive visual presence.',
-    icon: <Gallery size={24} className="text-cameroon-green" />,
+    icon: <GalleryHorizontal size={24} className="text-cameroon-green" />,
     features: [
       'Logo design', 
       'Color palette', 
@@ -83,7 +82,7 @@ const services = [
   {
     title: 'Custom Projects',
     description: 'Custom design services tailored to your specific needs and requirements.',
-    icon: <Gallery size={24} className="text-cameroon-green" />,
+    icon: <GalleryHorizontal size={24} className="text-cameroon-green" />,
     features: [
       'Personalized consultation', 
       'Custom solutions', 

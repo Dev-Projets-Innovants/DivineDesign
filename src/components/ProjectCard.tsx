@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Gallery, ArrowRight } from 'lucide-react';
+import { GalleryHorizontal, ArrowRight } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
@@ -58,7 +58,7 @@ const ProjectCard = ({
             <h3 className="font-bold text-lg">{title}</h3>
           </div>
           <div className="h-8 w-8 rounded-full bg-cameroon-green/10 flex items-center justify-center">
-            <Gallery size={16} className="text-cameroon-green" />
+            <GalleryHorizontal size={16} className="text-cameroon-green" />
           </div>
         </div>
         <p className="text-gray-600 text-sm line-clamp-2 mb-4">{description}</p>
