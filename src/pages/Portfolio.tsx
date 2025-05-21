@@ -19,7 +19,7 @@ const projects = [
     title: 'African Tours Logo',
     category: 'Logo Design',
     imageUrl: '/placeholder.svg',
-    description: 'Modern logo design for a Cameroonian tourism company highlighting the country's natural beauty and culture.',
+    description: "Modern logo design for a Cameroonian tourism company highlighting the country's natural beauty and culture.",
     beforeAfter: false,
   },
   {
