@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { Button } from '@/components/ui/button';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
@@ -32,11 +32,11 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Home</Link></li>
-              <li><Link to="/portfolio" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Portfolio</Link></li>
-              <li><Link to="/about" className="text-gray-300 hover:text-cameroon-yellow transition-colors">About</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Services</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Contact</Link></li>
+              <li><HashLink smooth to="#home" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Home</HashLink></li>
+              <li><HashLink smooth to="#portfolio" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Portfolio</HashLink></li>
+              <li><HashLink smooth to="#about" className="text-gray-300 hover:text-cameroon-yellow transition-colors">About</HashLink></li>
+              <li><HashLink smooth to="#services" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Services</HashLink></li>
+              <li><HashLink smooth to="#contact" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Contact</HashLink></li>
             </ul>
           </div>
           
@@ -47,7 +47,9 @@ const Footer = () => {
               <p>Email: <a href="mailto:info@cmdesign.cm" className="hover:text-cameroon-yellow transition-colors">info@cmdesign.cm</a></p>
               <p>Phone: <a href="tel:+237600000000" className="hover:text-cameroon-yellow transition-colors">+237 600 000 000</a></p>
             </address>
-            <Button className="mt-4 bg-cameroon-green hover:bg-cameroon-green/80">Get Quote</Button>
+            <HashLink smooth to="#contact">
+              <Button className="mt-4 bg-cameroon-green hover:bg-cameroon-green/80">Get Quote</Button>
+            </HashLink>
           </div>
         </div>
         
