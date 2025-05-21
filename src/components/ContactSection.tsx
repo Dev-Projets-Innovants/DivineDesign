@@ -21,9 +21,9 @@ const ContactSection = () => {
             <Button size="lg" className="bg-cameroon-green hover:bg-cameroon-green/90">
               <a href="mailto:info@cmdesign.cm">Get in Touch</a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => {
+            <Button size="lg" variant="outline" onClick={() => {
             window.location.href = "mailto:info@cmdesign.cm?subject=Quote%20Request&body=I'm%20interested%20in%20your%20design%20services.";
-          }}>
+          }} className="border-white text-gray-800 bg-amber-400 hover:bg-amber-300">
               Request a Quote
             </Button>
           </div>
