@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 
@@ -26,11 +26,11 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/portfolio', label: 'Portfolio' },
-    { path: '/about', label: 'About' },
-    { path: '/services', label: 'Services' },
-    { path: '/contact', label: 'Contact' }
+    { path: '#home', label: 'Home' },
+    { path: '#portfolio', label: 'Portfolio' },
+    { path: '#about', label: 'About' },
+    { path: '#services', label: 'Services' },
+    { path: '#contact', label: 'Contact' }
   ];
 
   return (
@@ -41,33 +41,27 @@ const Navbar = () => {
     >
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center">
+          <HashLink smooth to="#home" className="flex items-center">
             <div className="font-bold text-xl text-black">
               <span className="text-cameroon-green">CM</span>
               <span className="text-cameroon-yellow">Design</span>
             </div>
-          </Link>
+          </HashLink>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
-              <NavLink 
+              <HashLink 
                 key={link.path} 
+                smooth
                 to={link.path}
-                className={({ isActive }) => 
-                  `font-medium px-3 py-2 rounded-md transition-colors ${
-                    isActive ? 
-                    'text-cameroon-green' : 
-                    'hover:text-cameroon-green text-gray-700'
-                  }`
-                }
-                end
+                className="font-medium px-3 py-2 rounded-md transition-colors hover:text-cameroon-green text-gray-700"
               >
                 {link.label}
-              </NavLink>
+              </HashLink>
             ))}
             <Button className="bg-cameroon-green hover:bg-cameroon-green/80">
-              Get Quote
+              <HashLink smooth to="#contact">Get Quote</HashLink>
             </Button>
           </div>
 
@@ -91,24 +85,20 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 py-2 space-y-3">
           {navLinks.map((link) => (
-            <NavLink
+            <HashLink
               key={link.path}
+              smooth
               to={link.path}
-              className={({ isActive }) => 
-                `block px-3 py-2 rounded-md transition-colors ${
-                  isActive ? 
-                  'text-cameroon-green font-medium' : 
-                  'hover:text-cameroon-green text-gray-700'
-                }`
-              }
+              className="block px-3 py-2 rounded-md transition-colors hover:text-cameroon-green text-gray-700"
               onClick={() => setIsOpen(false)}
-              end
             >
               {link.label}
-            </NavLink>
+            </HashLink>
           ))}
           <Button className="w-full bg-cameroon-green hover:bg-cameroon-green/80 mt-2">
-            Get Quote
+            <HashLink smooth to="#contact" className="w-full" onClick={() => setIsOpen(false)}>
+              Get Quote
+            </HashLink>
           </Button>
         </div>
       </div>

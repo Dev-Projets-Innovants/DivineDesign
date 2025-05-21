@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const HeroSection = () => {
   return (
@@ -35,17 +35,15 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 className="bg-cameroon-green hover:bg-cameroon-green/90"
-                asChild
               >
-                <Link to="/portfolio">View Portfolio</Link>
+                <HashLink smooth to="#portfolio">View Portfolio</HashLink>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-cameroon-green text-cameroon-green hover:bg-cameroon-green/10"
-                asChild
               >
-                <Link to="/contact">Get in Touch</Link>
+                <HashLink smooth to="#contact">Get in Touch</HashLink>
               </Button>
             </div>
           </div>
@@ -56,8 +54,8 @@ const HeroSection = () => {
               <div className="absolute w-64 h-64 bg-cameroon-yellow/20 rounded-lg transform -rotate-12 bottom-12 left-12"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <img
-                  src="/placeholder.svg"
-                  alt="Designer working on a digital interface"
+                  src="/lovable-uploads/7f8181cb-7492-4647-ba0a-b4ff898abe22.png"
+                  alt="Designer portrait"
                   className="w-72 h-72 object-cover rounded-lg shadow-xl z-20"
                 />
               </div>
