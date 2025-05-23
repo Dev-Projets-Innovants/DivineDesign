@@ -3,10 +3,10 @@ import { Brush, GalleryHorizontal, Layers } from "lucide-react";
 
 // About section data
 const skills = [
-  { name: 'UI Design', level: 95 },
-  { name: 'Logo Design', level: 90 },
-  { name: 'Branding', level: 85 },
-  { name: 'Web Design', level: 88 },
+  { name: 'Logo Design', level: 95 },
+  { name: 'Flyer Design', level: 90 },
+  { name: 'Business Card Design', level: 88 },
+  { name: 'Invitation Design', level: 85 },
 ];
 
 const AboutSection = () => {
@@ -15,8 +15,8 @@ const AboutSection = () => {
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold mb-4">About <span className="text-cameroon-green">Me</span></h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          I create stunning digital experiences that blend modern design with Cameroonian cultural influences, 
-          helping businesses stand out in an increasingly digital world.
+          I am Divine Ngah, a passionate graphic designer and Chemistry student at the University of Bamenda, 
+          creating visual solutions that combine creativity with practicality.
         </p>
       </div>
       
@@ -26,8 +26,8 @@ const AboutSection = () => {
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-cameroon-yellow/10 rounded-full"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-cameroon-green/10 rounded-full"></div>
             <img
-              src="/placeholder.svg"
-              alt="Designer Portrait"
+              src="/lovable-uploads/7f8181cb-7492-4647-ba0a-b4ff898abe22.png"
+              alt="Divine Ngah - Designer Portrait"
               className="rounded-lg w-full h-auto relative z-10"
             />
           </div>
@@ -37,19 +37,19 @@ const AboutSection = () => {
           <h2 className="text-3xl font-bold mb-6">My Story</h2>
           <div className="space-y-4 text-gray-600">
             <p>
-              Hello! I'm [Your Name], a passionate UI designer and logo creator based in Douala, Cameroon. 
-              With over 8 years of experience in digital design, I've had the privilege of working with 
-              businesses across Cameroon and beyond.
+              Hello! I'm Divine Ngah, a passionate graphic designer and Chemistry student at the University of Bamenda, 
+              Faculty of Science. While pursuing my dreams of becoming an industrial engineer, I have discovered a deep 
+              love for graphic design that has become both my creative outlet and source of income.
             </p>
             <p>
-              My design journey began at [University/School] where I studied graphic design, before 
-              specializing in user interface design and branding. I've since worked with startups, 
-              established businesses, and international organizations to create meaningful digital experiences.
+              Based in Bamenda, Cameroon, I have been professionally creating visual solutions for clients across 
+              various industries for the past two years. My approach combines creativity with practicality, ensuring 
+              each project delivers real value to businesses and individuals.
             </p>
             <p>
-              My approach combines modern design principles with elements inspired by the rich cultural 
-              heritage of Cameroon and Africa at large. I believe in creating designs that are not only 
-              visually appealing but also functional, accessible, and culturally relevant.
+              I believe in creating designs that are not only visually appealing but also reliable and effective for 
+              my clients' needs. My expertise includes advanced proficiency in Pixel Lab and expert-level skills in 
+              PosterMyWall, along with custom graphic creation and photo manipulation.
             </p>
           </div>
         </div>
@@ -61,23 +61,23 @@ const AboutSection = () => {
             <Brush size={28} className="text-cameroon-green" />
           </div>
           <h3 className="text-xl font-semibold mb-2">Creative Design</h3>
-          <p className="text-gray-600">Unique designs tailored to your brand identity and target audience</p>
+          <p className="text-gray-600">Memorable brand identities and visual solutions tailored to your needs</p>
         </div>
         
         <div className="text-center p-6 rounded-lg bg-gray-50 border-t-4 border-cameroon-yellow">
           <div className="bg-cameroon-yellow/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <Layers size={28} className="text-cameroon-yellow" />
           </div>
-          <h3 className="text-xl font-semibold mb-2">User Experience</h3>
-          <p className="text-gray-600">Intuitive interfaces that prioritize user needs and business goals</p>
+          <h3 className="text-xl font-semibold mb-2">Reliable Quality</h3>
+          <p className="text-gray-600">2 years of professional experience with timely delivery and attention to detail</p>
         </div>
         
         <div className="text-center p-6 rounded-lg bg-gray-50 border-t-4 border-cameroon-red">
           <div className="bg-cameroon-red/10 h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <GalleryHorizontal size={28} className="text-cameroon-red" />
           </div>
-          <h3 className="text-xl font-semibold mb-2">Brand Identity</h3>
-          <p className="text-gray-600">Cohesive visual systems that communicate your brand's unique story</p>
+          <h3 className="text-xl font-semibold mb-2">Local Understanding</h3>
+          <p className="text-gray-600">Deep knowledge of Cameroonian market and cultural preferences</p>
         </div>
       </div>
       

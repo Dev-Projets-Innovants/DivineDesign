@@ -26,17 +26,21 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Creating <span className="text-gradient">Beautiful</span> Digital Experiences
+              Creating <span className="text-gradient">Beautiful</span> Visual Solutions
             </h1>
-            <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              Professional UI design & logo creation services based in Cameroon, blending modern aesthetics with African culture.
+            <p className="text-lg text-gray-600 mb-4 max-w-xl">
+              Hi, I'm Divine Ngah! A passionate graphic designer and Chemistry student based in Bamenda, Cameroon.
+            </p>
+            <p className="text-md text-gray-600 mb-8 max-w-xl">
+              Specializing in logos, flyers, business cards, and custom designs that combine creativity with practicality. 
+              2 years of professional experience serving satisfied clients.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
                 className="bg-cameroon-green hover:bg-cameroon-green/90"
               >
-                <HashLink smooth to="#portfolio">View Portfolio</HashLink>
+                <HashLink smooth to="#services">View Services</HashLink>
               </Button>
               <Button
                 size="lg"
@@ -55,7 +59,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <img
                   src="/lovable-uploads/7f8181cb-7492-4647-ba0a-b4ff898abe22.png"
-                  alt="Designer portrait"
+                  alt="Divine Ngah - Professional Designer"
                   className="w-72 h-72 object-cover rounded-lg shadow-xl z-20"
                 />
               </div>
