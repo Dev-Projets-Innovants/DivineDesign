@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <HashLink smooth to="#home" className="flex items-center">
             <div className="font-bold text-xl text-black">
-              <span className="text-cameroon-green">CM</span>
+              <span className="text-cameroon-green">Divine</span>
               <span className="text-cameroon-yellow">Design</span>
             </div>
           </HashLink>
