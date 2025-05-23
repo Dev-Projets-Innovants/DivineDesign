@@ -1,7 +1,6 @@
-
 import { HashLink } from 'react-router-hash-link';
 import { Button } from '@/components/ui/button';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -24,9 +23,6 @@ const Footer = () => {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-cameroon-yellow transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-cameroon-yellow transition-colors">
-                <Linkedin size={20} />
-              </a>
             </div>
           </div>
           
@@ -45,7 +41,7 @@ const Footer = () => {
             <address className="not-italic text-gray-300 space-y-2">
               <p>Bamenda, Cameroon</p>
               <p>Email: <a href="mailto:ngahdivine228@gmail.com" className="hover:text-cameroon-yellow transition-colors">ngahdivine228@gmail.com</a></p>
-              <p>Phone: <a href="tel:+237678438640" className="hover:text-cameroon-yellow transition-colors">+237 678 438 640</a></p>
+              <p>Phone: <a href="https://wa.me/237678438640" className="hover:text-cameroon-yellow transition-colors">+237 678 438 640</a></p>
             </address>
             <HashLink smooth to="#contact">
               <Button className="mt-4 bg-cameroon-green hover:bg-cameroon-green/80">Get Quote</Button>

@@ -1,6 +1,6 @@
 
 import { Button } from './ui/button';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 import { toast } from './ui/use-toast';
 
 const ContactSection = () => {
@@ -98,9 +98,6 @@ const ContactSection = () => {
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white p-3 rounded-full hover:bg-blue-800 transition-colors" aria-label="LinkedIn">
-                <Linkedin size={20} />
               </a>
               <button onClick={handleShareWhatsApp} className="bg-green-600 text-white p-3 rounded-full hover:bg-green-700 transition-colors" aria-label="Share on WhatsApp">
                 <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
