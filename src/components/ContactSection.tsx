@@ -93,7 +93,7 @@ const ContactSection = () => {
           <div className="mt-10">
             <h3 className="text-xl font-semibold mb-4">Connect with me and verify my identity on different platforms</h3>
             <div className="flex justify-center space-x-6">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=100059912252063" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition-colors" aria-label="Instagram">

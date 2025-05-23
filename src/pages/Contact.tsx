@@ -1,11 +1,10 @@
-
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const handleShareWhatsApp = () => {
-    const text = encodeURIComponent("Check out CMDesign for professional UI and logo design services: https://cmdesign.cm");
+    const text = encodeURIComponent("Check out Divine Ngah's professional design services for logos, flyers, and more: https://divinedesigns.cm");
     window.open(`https://wa.me/?text=${text}`, '_blank');
     toast({
       title: "Share Link Generated",
@@ -14,7 +13,7 @@ const Contact = () => {
   };
 
   const handleShareFacebook = () => {
-    window.open('https://www.facebook.com/sharer/sharer.php?u=https://cmdesign.cm', '_blank');
+    window.open('https://www.facebook.com/sharer/sharer.php?u=https://divinedesigns.cm', '_blank');
     toast({
       title: "Share Link Generated",
       description: "Facebook sharing is now ready.",
@@ -92,7 +91,7 @@ const Contact = () => {
               <h3 className="font-semibold text-lg mb-4">Connect on Social Media</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="https://facebook.com" 
+                  href="https://www.facebook.com/profile.php?id=100059912252063" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors"

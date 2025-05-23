@@ -18,7 +18,7 @@ const Footer = () => {
               business cards, and custom visual solutions with 2 years of experience.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-cameroon-yellow transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100059912252063" target="_blank" rel="noopener noreferrer" className="hover:text-cameroon-yellow transition-colors">
                 <Facebook size={20} />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-cameroon-yellow transition-colors">
