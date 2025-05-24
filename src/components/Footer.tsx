@@ -1,7 +1,9 @@
+
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Facebook, Instagram, Shield } from 'lucide-react';
+
 const Footer = () => {
   return <footer className="bg-gray-900 text-white mt-16">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -50,10 +52,6 @@ const Footer = () => {
                 </Button>
               </Link>
             </div>
-            
-            <HashLink smooth to="/#contact">
-              <Button className="w-full bg-cameroon-green hover:bg-cameroon-green/80">Let's Build Together! 🌟</Button>
-            </HashLink>
           </div>
         </div>
         
@@ -64,4 +62,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;
