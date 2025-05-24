@@ -59,9 +59,6 @@ Clone the repository and push changes. All pushed changes will be reflected in L
 - **Direct File Editing**: Edit files directly in GitHub and commit changes
 - **GitHub Codespaces**: Launch a cloud development environment
 
-### Custom Domain
-Connect a custom domain by navigating to **Project > Settings > Domains** and clicking **Connect Domain**.
-
 Read more: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
 
 ## Contact Divine for Design Services
