@@ -58,7 +58,7 @@ const HeroSection = () => {
               <div className="absolute w-64 h-64 bg-cameroon-yellow/20 rounded-lg transform -rotate-12 bottom-12 left-12"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <img
-                  src="/lovable-uploads/7f8181cb-7492-4647-ba0a-b4ff898abe22.png"
+                  src="/DivineDesign/lovable-uploads/7f8181cb-7492-4647-ba0a-b4ff898abe22.png"
                   alt="Divine Ngah - Professional Designer"
                   className="w-72 h-72 object-cover rounded-lg shadow-xl z-20"
                 />

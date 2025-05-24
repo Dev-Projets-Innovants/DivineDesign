@@ -26,7 +26,7 @@ const AboutSection = () => {
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-cameroon-yellow/10 rounded-full"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-cameroon-green/10 rounded-full"></div>
             <img
-              src="/lovable-uploads/7f8181cb-7492-4647-ba0a-b4ff898abe22.png"
+              src="/DivineDesign/lovable-uploads/7f8181cb-7492-4647-ba0a-b4ff898abe22.png"
               alt="Divine Ngah - Designer Portrait"
               className="rounded-lg w-full h-auto relative z-10"
             />

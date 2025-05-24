@@ -31,7 +31,7 @@ const ProjectCard = ({
     >
       <div className="relative overflow-hidden h-64">
         <img 
-          src={imageUrl || "/placeholder.svg"} 
+          src={imageUrl || "/DivineDesign/placeholder.svg"} 
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
