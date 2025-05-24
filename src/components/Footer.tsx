@@ -1,13 +1,14 @@
 
 import { HashLink } from 'react-router-hash-link';
 import { Button } from '@/components/ui/button';
-import { Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Shield } from 'lucide-react';
+import TrustSafetyDialog from './TrustSafetyDialog';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white mt-16">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1 md:col-span-2">
             <h2 className="text-xl font-semibold mb-4">
               <span className="text-cameroon-green">Divine</span>
@@ -35,19 +36,15 @@ const Footer = () => {
               <li><HashLink smooth to="#services" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Services</HashLink></li>
               <li><HashLink smooth to="#faq" className="text-gray-300 hover:text-cameroon-yellow transition-colors">FAQ</HashLink></li>
               <li><HashLink smooth to="#contact" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Contact</HashLink></li>
+              <li>
+                <TrustSafetyDialog>
+                  <button className="text-gray-300 hover:text-cameroon-yellow transition-colors flex items-center">
+                    <Shield size={16} className="mr-2" />
+                    Trust & Safety
+                  </button>
+                </TrustSafetyDialog>
+              </li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Contact Me</h3>
-            <address className="not-italic text-gray-300 space-y-2">
-              <p>Bamenda, Cameroon</p>
-              <p>Email: <a href="mailto:ngahdivine228@gmail.com" className="hover:text-cameroon-yellow transition-colors">ngahdivine228@gmail.com</a></p>
-              <p>Phone: <a href="https://wa.me/237678438640" className="hover:text-cameroon-yellow transition-colors">+237 678 438 640</a></p>
-            </address>
-            <HashLink smooth to="#contact">
-              <Button className="mt-4 bg-cameroon-green hover:bg-cameroon-green/80">Get Quote</Button>
-            </HashLink>
           </div>
         </div>
         
