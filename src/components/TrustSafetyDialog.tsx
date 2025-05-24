@@ -16,8 +16,10 @@ interface TrustSafetyDialogProps {
 }
 
 const TrustSafetyDialog = ({ children }: TrustSafetyDialogProps) => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>

@@ -31,11 +31,11 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><HashLink smooth to="#home" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Home</HashLink></li>
-              <li><HashLink smooth to="#about" className="text-gray-300 hover:text-cameroon-yellow transition-colors">About</HashLink></li>
-              <li><HashLink smooth to="#services" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Services</HashLink></li>
-              <li><HashLink smooth to="#faq" className="text-gray-300 hover:text-cameroon-yellow transition-colors">FAQ</HashLink></li>
-              <li><HashLink smooth to="#contact" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Contact</HashLink></li>
+              <li><HashLink smooth to="/#home" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Home</HashLink></li>
+              <li><HashLink smooth to="/#about" className="text-gray-300 hover:text-cameroon-yellow transition-colors">About</HashLink></li>
+              <li><HashLink smooth to="/#services" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Services</HashLink></li>
+              <li><HashLink smooth to="/#faq" className="text-gray-300 hover:text-cameroon-yellow transition-colors">FAQ</HashLink></li>
+              <li><HashLink smooth to="/#contact" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Contact</HashLink></li>
               <li>
                 <TrustSafetyDialog>
                   <button className="text-gray-300 hover:text-cameroon-yellow transition-colors flex items-center">
