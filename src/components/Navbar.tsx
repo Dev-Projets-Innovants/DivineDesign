@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 
@@ -27,13 +26,12 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { path: '#home', label: 'Home', type: 'hash' },
-    { path: '#portfolio', label: 'Portfolio', type: 'hash' },
-    { path: '#about', label: 'About', type: 'hash' },
-    { path: '#services', label: 'Services', type: 'hash' },
-    { path: '#faq', label: 'FAQ', type: 'hash' },
-    { path: '/trust-safety', label: 'Trust & Safety', type: 'route' },
-    { path: '#contact', label: 'Contact', type: 'hash' }
+    { path: '#home', label: 'Home' },
+    { path: '#portfolio', label: 'Portfolio' },
+    { path: '#about', label: 'About' },
+    { path: '#services', label: 'Services' },
+    { path: '#faq', label: 'FAQ' },
+    { path: '#contact', label: 'Contact' }
   ];
 
   return (
@@ -54,24 +52,14 @@ const Navbar = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
-              link.type === 'hash' ? (
-                <HashLink 
-                  key={link.path} 
-                  smooth
-                  to={link.path}
-                  className="font-medium px-3 py-2 rounded-md transition-colors hover:text-cameroon-green text-gray-700"
-                >
-                  {link.label}
-                </HashLink>
-              ) : (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className="font-medium px-3 py-2 rounded-md transition-colors hover:text-cameroon-green text-gray-700"
-                >
-                  {link.label}
-                </Link>
-              )
+              <HashLink 
+                key={link.path} 
+                smooth
+                to={link.path}
+                className="font-medium px-3 py-2 rounded-md transition-colors hover:text-cameroon-green text-gray-700"
+              >
+                {link.label}
+              </HashLink>
             ))}
             <Button className="bg-cameroon-green hover:bg-cameroon-green/80">
               <HashLink smooth to="#contact">Get Quote</HashLink>
@@ -98,26 +86,15 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 py-2 space-y-3">
           {navLinks.map((link) => (
-            link.type === 'hash' ? (
-              <HashLink
-                key={link.path}
-                smooth
-                to={link.path}
-                className="block px-3 py-2 rounded-md transition-colors hover:text-cameroon-green text-gray-700"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </HashLink>
-            ) : (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="block px-3 py-2 rounded-md transition-colors hover:text-cameroon-green text-gray-700"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            )
+            <HashLink
+              key={link.path}
+              smooth
+              to={link.path}
+              className="block px-3 py-2 rounded-md transition-colors hover:text-cameroon-green text-gray-700"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </HashLink>
           ))}
           <Button className="w-full bg-cameroon-green hover:bg-cameroon-green/80 mt-2">
             <HashLink smooth to="#contact" className="w-full" onClick={() => setIsOpen(false)}>
