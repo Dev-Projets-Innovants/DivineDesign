@@ -47,6 +47,30 @@ npm i
 npm run dev
 ```
 
+## Deployment
+
+This project includes an automated deployment workflow using GitHub Actions. The website is automatically deployed to GitHub Pages whenever changes are pushed to the `main` branch.
+
+### Automatic Deployment
+- Push changes to the `main` branch
+- GitHub Actions will automatically build and deploy the site
+- The website will be available at: `https://divinedesign-cameroon.github.io/DivineDesign/`
+
+### Manual Deployment
+If you need to deploy manually:
+
+```sh
+# Build the project
+npm run build
+
+# The dist folder contains the production-ready files
+```
+
+The deployment workflow is configured in `.github/workflows/deploy.yml` and handles:
+- Building the project with Vite
+- Optimizing assets for production
+- Deploying to GitHub Pages automatically
+
 ## Editing the Code
 
 ### Use Lovable (Recommended)
