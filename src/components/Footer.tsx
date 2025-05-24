@@ -1,14 +1,14 @@
 
 import { HashLink } from 'react-router-hash-link';
 import { Button } from '@/components/ui/button';
-import { Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Shield, AlertTriangle, Ban, CheckCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white mt-16">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="col-span-1">
             <h2 className="text-xl font-semibold mb-4">
               <span className="text-cameroon-green">Divine</span>
               <span className="text-cameroon-yellow">Design</span>
@@ -39,14 +39,49 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact Me</h3>
-            <address className="not-italic text-gray-300 space-y-2">
-              <p>Bamenda, Cameroon</p>
-              <p>Email: <a href="mailto:ngahdivine228@gmail.com" className="hover:text-cameroon-yellow transition-colors">ngahdivine228@gmail.com</a></p>
-              <p>Phone: <a href="https://wa.me/237678438640" className="hover:text-cameroon-yellow transition-colors">+237 678 438 640</a></p>
-            </address>
+            <div className="bg-gradient-to-r from-cameroon-green to-blue-600 p-4 rounded-lg mb-4">
+              <div className="flex items-center gap-2 mb-2">
+                <Shield className="h-5 w-5 text-white" />
+                <h3 className="font-semibold text-white">Trust & Community Values</h3>
+              </div>
+              <p className="text-sm text-white/90">🛡️ Commitment to the Cameroonian Community</p>
+            </div>
+            
+            <div className="space-y-3 text-sm">
+              <div className="flex items-start gap-2">
+                <CheckCircle className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-300">100% Legitimate Services - University of Bamenda student</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-300">Transparent communication & real samples provided</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-300">Supporting genuine local Cameroonian talent</span>
+              </div>
+            </div>
+            
+            <div className="bg-red-900/30 border border-red-500/50 p-3 rounded-lg mt-4">
+              <div className="flex items-center gap-2 mb-2">
+                <AlertTriangle className="h-4 w-4 text-red-400" />
+                <span className="font-semibold text-red-400 text-sm">Zero Tolerance Policy</span>
+              </div>
+              <div className="space-y-1 text-xs text-red-200">
+                <div className="flex items-center gap-1">
+                  <Ban className="h-3 w-3" />
+                  <span>No fraud, scams, or harassment</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <Ban className="h-3 w-3" />
+                  <span>Professional conduct required</span>
+                </div>
+                <p className="text-red-300 mt-2">Violations reported to authorities</p>
+              </div>
+            </div>
+            
             <HashLink smooth to="#contact">
-              <Button className="mt-4 bg-cameroon-green hover:bg-cameroon-green/80">Get Quote</Button>
+              <Button className="mt-4 w-full bg-cameroon-green hover:bg-cameroon-green/80">Let's Build Together! 🌟</Button>
             </HashLink>
           </div>
         </div>

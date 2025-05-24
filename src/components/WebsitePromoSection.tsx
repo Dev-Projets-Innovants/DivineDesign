@@ -1,23 +1,27 @@
-
 import { Button } from './ui/button';
 import { Star, Globe, Smartphone, Zap, Palette, Users } from 'lucide-react';
-
 const WebsitePromoSection = () => {
-  const services = [
-    { icon: Globe, title: "Professional portfolio websites" },
-    { icon: Zap, title: "Business landing pages" },
-    { icon: Palette, title: "Creative showcases" },
-    { icon: Star, title: "Brand identity development" },
-    { icon: Users, title: "Complete digital presence setup" }
-  ];
-
+  const services = [{
+    icon: Globe,
+    title: "Professional portfolio websites"
+  }, {
+    icon: Zap,
+    title: "Business landing pages"
+  }, {
+    icon: Palette,
+    title: "Creative showcases"
+  }, {
+    icon: Star,
+    title: "Brand identity development"
+  }, {
+    icon: Users,
+    title: "Complete digital presence setup"
+  }];
   const handleContactWhatsApp = () => {
     const message = encodeURIComponent("Hi Divine! I'm interested in getting a website like yours. Can you tell me more about your web development services?");
     window.open(`https://wa.me/237678438640?text=${message}`, "_blank");
   };
-
-  return (
-    <section className="py-20 bg-gradient-to-br from-cameroon-green to-cameroon-green/80 text-white relative overflow-hidden">
+  return <section className="py-20 bg-gradient-to-br from-cameroon-green to-cameroon-green/80 text-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-cameroon-yellow/20 rounded-full translate-y-24 -translate-x-24"></div>
@@ -48,14 +52,12 @@ const WebsitePromoSection = () => {
             </h3>
             
             <div className="space-y-4">
-              {services.map((service, index) => (
-                <div key={index} className="flex items-center gap-3">
+              {services.map((service, index) => <div key={index} className="flex items-center gap-3">
                   <div className="bg-white/10 p-2 rounded-full">
                     <service.icon className="h-4 w-4" />
                   </div>
                   <span className="text-white/90">{service.title}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -94,26 +96,15 @@ const WebsitePromoSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-cameroon-yellow text-black hover:bg-cameroon-yellow/90 font-semibold"
-              onClick={handleContactWhatsApp}
-            >
+            <Button size="lg" className="bg-cameroon-yellow text-black hover:bg-cameroon-yellow/90 font-semibold" onClick={handleContactWhatsApp}>
               Get My Website Quote
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white/10"
-              onClick={() => window.open("mailto:ngahdivine228@gmail.com?subject=Website%20Development%20Inquiry", "_blank")}
-            >
+            <Button size="lg" variant="outline" onClick={() => window.open("mailto:ngahdivine228@gmail.com?subject=Website%20Development%20Inquiry", "_blank")} className="border-white text-white bg-zinc-950 hover:bg-zinc-800">
               Email Me
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default WebsitePromoSection;
