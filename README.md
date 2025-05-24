@@ -5,56 +5,6 @@
 
 This is the official portfolio website for **Divine Ngah**, a passionate graphic designer and Chemistry student based in Bamenda, Cameroon. The website showcases his creative work and professional design services, combining modern web design with elements inspired by Cameroon's cultural heritage.
 
-## About Divine Ngah
-
-Divine Ngah is a talented graphic designer and Chemistry student at the University of Bamenda, Faculty of Science. With 2 years of professional experience in graphic design, he has been creating visual solutions for clients across various industries while pursuing his academic dreams of becoming an industrial engineer.
-
-Based in Bamenda, Cameroon, Divine specializes in creating designs that are not only visually appealing but also practical and effective for his clients' business needs. His approach combines creativity with reliability, ensuring each project delivers real value.
-
-## Website Features
-
-### 🎨 **Hero Section**
-- Professional introduction with Cameroon flag color scheme
-- Clear call-to-action buttons for services and contact
-- Modern, responsive design with cultural elements
-
-### 👨‍💼 **About Section**
-- Personal story and professional background
-- Skills showcase with proficiency levels
-- Core values: Creative Design, Reliable Quality, Local Understanding
-
-### 🖼️ **Portfolio Section**
-Interactive portfolio featuring:
-- Church Service Event Poster
-- Parfums De France Logo
-- Carols Resto Logo Design
-- Gentle Brown Clothing Boutique Flyer
-- Grachi Luxury Hairs Business Poster
-- Personal Business Card Design
-
-**Filter Categories**: All, UI Design, Logo Design, Branding, Web Design, Before/After
-
-### 💼 **Services Section**
-Professional services offered:
-- **Logo Design** - Memorable brand identities with unlimited revisions
-- **Flyer Design** - Eye-catching promotional materials for events and businesses
-- **Business Cards** - Professional networking tools with quick turnaround
-- **Invitation Cards** - Elegant designs for weddings, parties, and special events
-- **Birthday Photo Design** - Personalized birthday graphics and photo montages
-- **Custom Projects** - General graphic design and custom visual solutions
-
-**Project Timeline**:
-- Simple Designs: 2-3 days
-- Logo Designs: 3-5 days (including revisions)
-- Complex Projects: 5-10 days
-
-### 📞 **Contact Section**
-Multiple ways to get in touch:
-- **WhatsApp**: +237 620 79 42 42 / +237 620 79 42 51
-- **Email**: ngahdivine6@gmail.com
-- **Facebook**: Divine Ngah Graphics Designer
-- **Location**: Bamenda, Cameroon
-
 ## Design Philosophy
 
 The website features a color scheme inspired by the Cameroon flag:
