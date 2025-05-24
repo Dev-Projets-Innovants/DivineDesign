@@ -1,11 +1,8 @@
-
 import { Shield, AlertTriangle, Ban, CheckCircle, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { HashLink } from 'react-router-hash-link';
-
 const TrustSafety = () => {
-  return (
-    <div className="min-h-screen pt-24 pb-16">
+  return <div className="min-h-screen pt-24 pb-16">
       <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -86,10 +83,7 @@ const TrustSafety = () => {
         {/* Supporting Local Business Section */}
         <div className="bg-cameroon-green/10 border border-cameroon-green/30 rounded-lg p-6 mb-8">
           <h2 className="text-xl font-semibold text-cameroon-green mb-4">💪 Supporting Local Business</h2>
-          <p className="text-gray-700">
-            As a young Cameroonian entrepreneur, I believe in building our community through legitimate business practices. 
-            When you work with me, you're supporting genuine local talent and contributing to positive economic growth in our region.
-          </p>
+          <p className="text-gray-700">As a young Cameroonian , I believe in building our community through legitimate business practices. When you work with me, you're supporting genuine local talent and contributing to positive economic growth in our region.</p>
         </div>
 
         {/* Professional Standards Section */}
@@ -218,8 +212,6 @@ const TrustSafety = () => {
           </HashLink>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default TrustSafety;
