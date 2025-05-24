@@ -59,11 +59,6 @@ Clone the repository and push changes. All pushed changes will be reflected in L
 - **Direct File Editing**: Edit files directly in GitHub and commit changes
 - **GitHub Codespaces**: Launch a cloud development environment
 
-## Deployment
-
-### Quick Deployment
-Simply open [Lovable](https://lovable.dev/projects/29fbfe34-ecc7-4835-9344-0a40bbd1ec7a) and click on **Share → Publish**.
-
 ### Custom Domain
 Connect a custom domain by navigating to **Project > Settings > Domains** and clicking **Connect Domain**.
 
@@ -81,5 +76,3 @@ Ready to work with Divine Ngah? Get in touch:
 *Professional graphic design services with 2 years of experience serving satisfied clients across Cameroon.*
 
 ---
-
-**Project URL**: https://lovable.dev/projects/29fbfe34-ecc7-4835-9344-0a40bbd1ec7a
