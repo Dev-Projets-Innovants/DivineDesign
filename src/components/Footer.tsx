@@ -1,14 +1,15 @@
 
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Shield } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white mt-16">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="col-span-1 md:col-span-1">
             <h2 className="text-xl font-semibold mb-4">
               <span className="text-cameroon-green">Divine</span>
               <span className="text-cameroon-yellow">Design</span>
@@ -39,15 +40,19 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact Me</h3>
-            <address className="not-italic text-gray-300 space-y-2">
-              <p>Bamenda, Cameroon</p>
-              <p>Email: <a href="mailto:ngahdivine228@gmail.com" className="hover:text-cameroon-yellow transition-colors">ngahdivine228@gmail.com</a></p>
-              <p>Phone: <a href="https://wa.me/237678438640" className="hover:text-cameroon-yellow transition-colors">+237 678 438 640</a></p>
-            </address>
-            <HashLink smooth to="#contact">
-              <Button className="mt-4 bg-cameroon-green hover:bg-cameroon-green/80">Get Quote</Button>
-            </HashLink>
+            <h3 className="font-semibold text-lg mb-4">Trust & Safety</h3>
+            <div className="flex items-center mb-4">
+              <Shield className="h-5 w-5 text-cameroon-green mr-2" />
+              <span className="text-gray-300">100% Legitimate Services</span>
+            </div>
+            <p className="text-gray-300 mb-4 text-sm">
+              Committed to transparency, integrity, and supporting the Cameroonian design community.
+            </p>
+            <Link to="/trust-safety">
+              <Button className="bg-cameroon-green hover:bg-cameroon-green/80">
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
         
