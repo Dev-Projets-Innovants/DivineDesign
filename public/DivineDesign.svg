@@ -1,0 +1,41 @@
+
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A651;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFFF00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D80027;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5F5F5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGradient)" stroke="#333" stroke-width="4"/>
+  
+  <!-- Inner design elements -->
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  <circle cx="200" cy="200" r="140" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Design elements - geometric shapes -->
+  <polygon points="200,80 220,120 260,120 228,148 240,188 200,168 160,188 172,148 140,120 180,120" 
+           fill="#FFFFFF" opacity="0.8"/>
+  
+  <!-- Text - Divine -->
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" 
+        font-weight="bold" fill="url(#textGradient)">Divine</text>
+  
+  <!-- Text - Design -->
+  <text x="200" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" 
+        font-weight="normal" fill="url(#textGradient)">Design</text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" 
+        fill="#FFFFFF" opacity="0.9">Graphics • UI • Branding</text>
+  
+  <!-- Location indicator -->
+  <text x="200" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" 
+        fill="#FFFFFF" opacity="0.7">Bamenda, Cameroon</text>
+</svg>
