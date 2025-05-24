@@ -1,7 +1,6 @@
 
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { GalleryHorizontal, ArrowRight } from 'lucide-react';
+import { GalleryHorizontal } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
@@ -61,14 +60,7 @@ const ProjectCard = ({
             <GalleryHorizontal size={16} className="text-cameroon-green" />
           </div>
         </div>
-        <p className="text-gray-600 text-sm line-clamp-2 mb-4">{description}</p>
-        <Button 
-          variant="ghost" 
-          className="px-0 text-cameroon-green font-medium hover:text-cameroon-green/80 hover:bg-transparent group"
-        >
-          View Project
-          <ArrowRight size={16} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
-        </Button>
+        <p className="text-gray-600 text-sm line-clamp-2">{description}</p>
       </div>
     </div>
   );
