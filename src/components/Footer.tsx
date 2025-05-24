@@ -1,14 +1,14 @@
 
 import { HashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Facebook, Instagram, Shield } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
-  return <footer className="bg-gray-900 text-white mt-16">
+  return (
+    <footer className="bg-gray-900 text-white mt-16">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="col-span-1 md:col-span-2">
             <h2 className="text-xl font-semibold mb-4">
               <span className="text-cameroon-green">Divine</span>
               <span className="text-cameroon-yellow">Design</span>
@@ -30,28 +30,24 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><HashLink smooth to="/#home" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Home</HashLink></li>
-              <li><HashLink smooth to="/#about" className="text-gray-300 hover:text-cameroon-yellow transition-colors">About</HashLink></li>
-              <li><HashLink smooth to="/#services" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Services</HashLink></li>
-              <li><HashLink smooth to="/#faq" className="text-gray-300 hover:text-cameroon-yellow transition-colors">FAQ</HashLink></li>
-              <li><Link to="/trust-safety" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Trust & Safety</Link></li>
-              <li><HashLink smooth to="/#contact" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Contact</HashLink></li>
+              <li><HashLink smooth to="#home" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Home</HashLink></li>
+              <li><HashLink smooth to="#about" className="text-gray-300 hover:text-cameroon-yellow transition-colors">About</HashLink></li>
+              <li><HashLink smooth to="#services" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Services</HashLink></li>
+              <li><HashLink smooth to="#faq" className="text-gray-300 hover:text-cameroon-yellow transition-colors">FAQ</HashLink></li>
+              <li><HashLink smooth to="#contact" className="text-gray-300 hover:text-cameroon-yellow transition-colors">Contact</HashLink></li>
             </ul>
           </div>
           
           <div>
-            <div className="bg-gradient-to-r from-cameroon-green to-blue-600 p-4 rounded-lg mb-4">
-              <div className="flex items-center gap-2 mb-2">
-                <Shield className="h-5 w-5 text-white" />
-                <h3 className="font-semibold text-white">Trust & Community</h3>
-              </div>
-              <p className="text-sm text-white/90 mb-3">🛡️ 100% Legitimate Services</p>
-              <Link to="/trust-safety">
-                <Button variant="outline" size="sm" className="border-white hover:bg-white text-red-500">
-                  Learn More
-                </Button>
-              </Link>
-            </div>
+            <h3 className="font-semibold text-lg mb-4">Contact Me</h3>
+            <address className="not-italic text-gray-300 space-y-2">
+              <p>Bamenda, Cameroon</p>
+              <p>Email: <a href="mailto:ngahdivine228@gmail.com" className="hover:text-cameroon-yellow transition-colors">ngahdivine228@gmail.com</a></p>
+              <p>Phone: <a href="https://wa.me/237678438640" className="hover:text-cameroon-yellow transition-colors">+237 678 438 640</a></p>
+            </address>
+            <HashLink smooth to="#contact">
+              <Button className="mt-4 bg-cameroon-green hover:bg-cameroon-green/80">Get Quote</Button>
+            </HashLink>
           </div>
         </div>
         
@@ -60,7 +56,8 @@ const Footer = () => {
           <p className="mt-2">Professional graphic design services in Cameroon 🇨🇲</p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
 
 export default Footer;
